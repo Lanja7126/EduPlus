@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduPlus - Plateforme d'éducation en ligne</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="#">EduPlus</a>
+    </div>
+
+    <div class="toggle-btn" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="cours.html"><i class="fas fa-book-open"></i> Cours</a></li>
+            <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> Enseignants</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="#"><i class="fas fa-graduation-cap"></i> Certification</a></li>
+        </ul>
+        <div class="menu-right">
+            <input type="search" class="search" placeholder="Rechercher..." />
+            <select id="lang-select">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+         </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>L'éducation de qualité pour tous</h1>
+      <p>Notre plateforme soutient l'Objectif de Développement Durable n°4 avec des cours accessibles, modernes et adaptés à tous les apprenants.</p>
+      <div class="hero-buttons">
+        <a href="cours.html" class="cta-btn primary">Explorer les cours</a>
+        <a href="#" class="cta-btn secondary">Découvrir notre mission</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">250+</span>
+          <span class="stat-label">Cours disponibles</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">50K+</span>
+          <span class="stat-label">Apprenants</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">98%</span>
+          <span class="stat-label">Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Pourquoi choisir EduPlus ?</h2>
+      <p class="section-subtitle">Une expérience d'apprentissage unique conçue pour votre réussite</p>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Contenu moderne</h3>
+          <p>Cours régulièrement mis à jour avec les dernières technologies et méthodologies pédagogiques.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <h3>Apprentissage personnalisé</h3>
+          <p>Parcours adaptés à votre niveau et à vos objectifs professionnels ou académiques.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-globe-africa"></i>
+          </div>
+          <h3>Accessible partout</h3>
+          <p>Disponible sur tous vos appareils, même avec une connexion internet limitée.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>Certifications reconnues</h3>
+          <p>Obtenez des certifications valorisées sur le marché du travail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular-courses">
+    <div class="container">
+      <h2 class="section-title">Nos cours populaires</h2>
+      <p class="section-subtitle">Découvrez les formations les plus suivies par notre communauté</p>
+      
+      <div class="courses-grid">
+        <div class="course-card">
+          <div class="course-badge">Nouveau</div>
+          <img src="./images/code.jpg" alt="Programmation Web">
+          <div class="course-content">
+            <h3>Programmation Web Complète</h3>
+            <p>Maîtrisez HTML5, CSS3, JavaScript et frameworks modernes.</p>
+            <div class="course-meta">
+              <span class="course-rating"><i class="fas fa-star"></i> 4.9</span>
+              <span class="course-duration"><i class="far fa-clock"></i> 24h</span>
+            </div>
+            <a href="cours-detail.html?id=web" class="course-btn">Voir le cours</a>
+          </div>
+        </div>
+        
+        <div class="course-card">
+          <div class="course-badge">Populaire</div>
+          <img src="./images/anglais.jpg" alt="Anglais Professionnel">
+          <div class="course-content">
+            <h3>Anglais Professionnel</h3>
+            <p>Développez vos compétences linguistiques pour le monde du travail.</p>
+            <div class="course-meta">
+              <span class="course-rating"><i class="fas fa-star"></i> 4.8</span>
+              <span class="course-duration"><i class="far fa-clock"></i> 36h</span>
+            </div>
+            <a href="cours-detail.html?id=anglais" class="course-btn">Voir le cours</a>
+          </div>
+        </div>
+        
+        <div class="course-card">
+          <img src="./images/data-science.jpg" alt="Data Science">
+          <div class="course-content">
+            <h3>Data Science Fondamentaux</h3>
+            <p>Introduction à Python, analyse de données et machine learning.</p>
+            <div class="course-meta">
+              <span class="course-rating"><i class="fas fa-star"></i> 4.9</span>
+              <span class="course-duration"><i class="far fa-clock"></i> 40h</span>
+            </div>
+            <a href="cours-detail.html?id=data" class="course-btn">Voir le cours</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section-cta">
+        <a href="cours.html" class="cta-btn outline">Voir tous les cours</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">Témoignages</h2>
+      <p class="section-subtitle">Ce que nos apprenants disent de nous</p>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"Grâce à EduPlus, j'ai pu me reconvertir dans le développement web et trouver un emploi en seulement 6 mois. Les cours sont très bien structurés."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="./images/testimonial1.jpg" alt="Sarah K.">
+            <div>
+              <h4>Sarah K.</h4>
+              <span>Développeuse Front-end</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"En tant qu'enseignant, j'utilise EduPlus pour compléter mes cours. La qualité pédagogique est exceptionnelle et mes élèves progressent rapidement."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="./images/testimonial2.jpg" alt="Jean M.">
+            <div>
+              <h4>Jean M.</h4>
+              <span>Professeur de Mathématiques</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>"L'anglais professionnel m'a permis d'obtenir une promotion. Je peux maintenant communiquer avec nos clients internationaux en toute confiance."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="./images/testimonial3.jpg" alt="Amadou D.">
+            <div>
+              <h4>Amadou D.</h4>
+              <span>Responsable Commercial</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Prêt à commencer votre voyage d'apprentissage ?</h2>
+        <p>Rejoignez notre communauté de plus de 50,000 apprenants à travers le monde.</p>
+        <div class="cta-buttons">
+          <a href="#" class="cta-btn primary">S'inscrire gratuitement</a>
+          <a href="#" class="cta-btn outline">Découvrir nos offres</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>EduPlus</h3>
+        <p>Plateforme d'apprentissage en ligne dédiée à l'éducation de qualité pour tous, conformément à l'ODD 4.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="cours.html">Cours</a></li>
+          <li><a href="#">Enseignants</a></li>
+          <li><a href="#">Certifications</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Centre d'aide</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Conditions d'utilisation</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Rue de l'Éducation, Paris</p>
+        <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+        <p><i class="fas fa-envelope"></i> contact@eduplus.fr</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 EduPlus - Tous droits réservés. Inspiré par l'Objectif de Développement Durable 4.</p>
+    </div>
+  </footer>
+
+  <script src="./js/app.js"></script>
+  <script src="./js/lang.js"></script>
+</body>
+</html>

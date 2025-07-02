@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nos cours - Plateforme éducative</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/cours.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+    <header class="navbar">
+    <div class="logo">
+      <a href="#">EduPlus</a>
+    </div>
+
+    <div class="toggle-btn" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="cours.html"><i class="fas fa-book-open"></i> Cours</a></li>
+            <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> Enseignants</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="#"><i class="fas fa-graduation-cap"></i> Certification</a></li>
+        </ul>
+        <div class="menu-right">
+            <input type="search" class="search" placeholder="Rechercher..." />
+            <select id="lang-select">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+         </div>
+    </nav>
+  </header>
+
+  <main class="courses-page">
+    <section class="courses-header">
+      <h1>Développez vos compétences</h1>
+      <p>Choisissez parmi nos cours premium et accélérez votre apprentissage avec des experts</p>
+      <div class="filter-options">
+        <button class="filter-btn active" data-category="all">Tous les cours</button>
+        <button class="filter-btn" data-category="tech">Technologie</button>
+        <button class="filter-btn" data-category="langues">Langues</button>
+        <button class="filter-btn" data-category="science">Sciences</button>
+        <button class="filter-btn" data-category="creatif">Créatif</button>
+      </div>
+    </section>
+
+    <section class="courses-grid" id="content-container">
+        <div class="course-card" data-category="tech">
+            <a href="cours-detail.html?id=web">
+                <img src="./images/code.jpg" alt="Programmation" />
+                <div class="course-badge">Nouveau</div>
+                <div class="course-info">
+                  <span class="course-level">Débutant</span>
+                  <span class="course-duration"><i class="far fa-clock"></i> 24h</span>
+                </div>
+                <h3>Programmation Web Complète</h3>
+                <p>Maîtrisez HTML5, CSS3, JavaScript et frameworks modernes pour créer des sites web interactifs.</p>
+                <div class="course-meta">
+                  <span class="course-rating">
+                    <i class="fas fa-star"></i> 4.9 (128)
+                  </span>
+                  <span class="course-price">Gratuit</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="course-card" data-category="science">
+            <a href="cours-detail.html?id=math">
+                <img src="./images/math.jpg" alt="Mathématiques" />
+                <div class="course-info">
+                  <span class="course-level">Intermédiaire</span>
+                  <span class="course-duration"><i class="far fa-clock"></i> 18h</span>
+                </div>
+                <h3>Mathématiques Avancées</h3>
+                <p>Algèbre, géométrie et analyse pour les études supérieures et les concours scientifiques.</p>
+                <div class="course-meta">
+                  <span class="course-rating">
+                    <i class="fas fa-star"></i> 4.7 (95)
+                  </span>
+                  <span class="course-price">€29.99</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="course-card" data-category="langues">
+            <a href="cours-detail.html?id=anglais">
+                <img src="./images/anglais.jpg" alt="Anglais" />
+                <div class="course-badge">Populaire</div>
+                <div class="course-info">
+                  <span class="course-level">Tous niveaux</span>
+                  <span class="course-duration"><i class="far fa-clock"></i> 36h</span>
+                </div>
+                <h3>Anglais Professionnel</h3>
+                <p>Développez vos compétences linguistiques pour le monde du travail et les voyages.</p>
+                <div class="course-meta">
+                  <span class="course-rating">
+                    <i class="fas fa-star"></i> 4.8 (215)
+                  </span>
+                  <span class="course-price">€49.99</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="course-card" data-category="creatif">
+            <a href="cours-detail.html?id=design">
+                <img src="./images/design.jpg" alt="Design Graphique" />
+                <div class="course-info">
+                  <span class="course-level">Débutant</span>
+                  <span class="course-duration"><i class="far fa-clock"></i> 20h</span>
+                </div>
+                <h3>Design Graphique Moderne</h3>
+                <p>Photoshop, Illustrator et principes du design pour créer des visuels percutants.</p>
+                <div class="course-meta">
+                  <span class="course-rating">
+                    <i class="fas fa-star"></i> 4.6 (178)
+                  </span>
+                  <span class="course-price">€39.99</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="course-card" data-category="tech">
+            <a href="cours-detail.html?id=data">
+                <img src="./images/data-science.jpg" alt="Data Science" />
+                <div class="course-badge">Nouveau</div>
+                <div class="course-info">
+                  <span class="course-level">Avancé</span>
+                  <span class="course-duration"><i class="far fa-clock"></i> 40h</span>
+                </div>
+                <h3>Data Science Fondamentaux</h3>
+                <p>Introduction à Python, analyse de données et machine learning pour débutants.</p>
+                <div class="course-meta">
+                  <span class="course-rating">
+                    <i class="fas fa-star"></i> 4.9 (87)
+                  </span>
+                  <span class="course-price">€59.99</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="course-card" data-category="langues">
+            <a href="cours-detail.html?id=espagnol">
+                <img src="./images/espagnol.jpg" alt="Espagnol" />
+                <div class="course-info">
+                  <span class="course-level">Débutant</span>
+                  <span class="course-duration"><i class="far fa-clock"></i> 30h</span>
+                </div>
+                <h3>Espagnol pour Voyageurs</h3>
+                <p>Apprenez les bases de l'espagnol pour communiquer efficacement en voyage.</p>
+                <div class="course-meta">
+                  <span class="course-rating">
+                    <i class="fas fa-star"></i> 4.5 (63)
+                  </span>
+                  <span class="course-price">€34.99</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="course-card" data-category="science">
+            <a href="cours-detail.html?id=physique">
+                <img src="./images/physique.jpg" alt="Physique" />
+                <div class="course-info">
+                  <span class="course-level">Intermédiaire</span>
+                  <span class="course-duration"><i class="far fa-clock"></i> 25h</span>
+                </div>
+                <h3>Physique Quantique</h3>
+                <p>Découvrez les concepts fondamentaux de la physique moderne et ses applications.</p>
+                <div class="course-meta">
+                  <span class="course-rating">
+                    <i class="fas fa-star"></i> 4.7 (42)
+                  </span>
+                  <span class="course-price">€44.99</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="course-card" data-category="creatif">
+            <a href="cours-detail.html?id=photographie">
+                <img src="./images/photographie.jpg" alt="Photographie" />
+                <div class="course-badge">Populaire</div>
+                <div class="course-info">
+                  <span class="course-level">Tous niveaux</span>
+                  <span class="course-duration"><i class="far fa-clock"></i> 15h</span>
+                </div>
+                <h3>Photographie Numérique</h3>
+                <p>Techniques de composition, éclairage et post-traitement avec Lightroom.</p>
+                <div class="course-meta">
+                  <span class="course-rating">
+                    <i class="fas fa-star"></i> 4.8 (156)
+                  </span>
+                  <span class="course-price">€39.99</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-content">
+        <h2>Restez informé</h2>
+        <p>Abonnez-vous à notre newsletter pour recevoir les nouveaux cours et offres spéciales</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Votre email" required>
+          <button type="submit">S'abonner <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>EduPlus</h3>
+          <p>Plateforme d'apprentissage en ligne dédiée à l'éducation de qualité pour tous, conformément à l'ODD 4.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Catégories</h3>
+          <ul>
+            <li><a href="#">Technologie</a></li>
+            <li><a href="#">Langues</a></li>
+            <li><a href="#">Sciences</a></li>
+            <li><a href="#">Créativité</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Liens utiles</h3>
+          <ul>
+            <li><a href="#"><i class="fas fa-gavel"></i> Mentions légales</a></li>
+            <li><a href="#"><i class="fas fa-user-secret"></i> Confidentialité</a></li>
+            <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Rue de l'Éducation, Paris</p>
+          <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+          <p><i class="fas fa-envelope"></i> contact@eduplus.fr</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduPlus - Tous droits réservés. Inspiré par l'Objectif de Développement Durable 4.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/app.js"></script>
+  <script src="./js/lang.js"></script>
+  <script src="./js/courses-filter.js"></script>
+</body>
+</html>
